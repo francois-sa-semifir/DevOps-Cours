@@ -270,8 +270,7 @@ Docker Compose est généralement plus simple à configurer et à utiliser pour 
 
 ---
 
-TODO
-![Manifest](./assets/schémas/...)
+![Manifest](./assets/schémas/manifest.png)
 
 ---
 
@@ -300,6 +299,12 @@ TODO
 ## En résumé
 
 - Les manifestes Kubernetes jouent un rôle crucial dans le déploiement et la gestion des applications sur Kubernetes, et leur compréhension et leur maîtrise sont essentielles pour les opérations de développement et d'exploitation sur Kubernetes.
+
+---
+
+## prochain Objectif
+
+![Manifest](./assets/schémas/argo.png)
 
 ---
 

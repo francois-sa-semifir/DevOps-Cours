@@ -64,7 +64,13 @@ author:
 
 ## Installation des extensions vscode
 
-TODO
+- Docker
+- GitHub actions
+- Indent-rainbow
+- Kubernetes
+- Markdown Preview Enhanced
+- Python
+- YAML
 
 ---
 
@@ -92,7 +98,7 @@ Notes:
 
 ## Activation de Kubernetes via Docker
 
-![Kub in Docker](/assets/paramètrage/Settings_Kub_in_Docker.png) <!-- .element width="60%" -->
+![Kub in Docker](/assets/paramètrage/Settings_Kub_in_Docker.png) <!-- .element width="58%" -->
 
 ![Kubernets](/assets/Kubernets.svg) <!-- .element width="5%" -->
 
