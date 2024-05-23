@@ -60,6 +60,7 @@
 - **Utilité** :
 
   GitLab CI/CD est une fonctionnalité intégrée à GitLab, permettant d'automatiser la livraison et le déploiement de logiciels. Elle aide les équipes à améliorer leur productivité en intégrant des tests automatisés et des déploiements continus.
+
 - **Fonctionnement** :
   
   - Les pipelines GitLab CI/CD sont définis dans des fichiers `.gitlab-ci.yml`, placés à la racine du dépôt de code.
@@ -141,6 +142,7 @@
 - **Utilité** :
   
   Ansible est un outil d'automatisation qui simplifie la gestion de configuration, le déploiement d'applications et l'orchestration des tâches IT. Il est populaire pour sa simplicité et son efficacité sans agent.
+
 - **Fonctionnement** :
 
   - Utilise des playbooks, écrits en YAML, pour décrire l'état désiré des systèmes et les tâches à exécuter.
@@ -257,31 +259,3 @@
   - **Rapidité** : Capable d'exécuter des scans rapidement et efficacement.
 
   - **Large couverture** : Peut réaliser une gamme étendue de tests de sécurité, incluant des tests personnalisés.
-
----
-
-## **Gestion des Pipelines**
-
----
-
-### Pipeline
-
-- **Utilité** :
-  
-  Les pipelines sont utilisés pour définir et gérer les étapes automatisées de développement, test et déploiement du code. Ils assurent que chaque changement de code passe par un processus rigoureux de vérification avant d'être déployé en production.
-
-- **Fonctionnement** :
-
-  - Les pipelines sont généralement définis dans des fichiers de configuration (comme YAML, JSON, ou Groovy), qui décrivent les différentes étapes du processus de CI/CD.
-
-  - Une étape de pipeline peut inclure la compilation du code, l'exécution de tests unitaires, l'analyse statique du code, le déploiement sur un environnement de test, et enfin le déploiement en production.
-
-  - Les pipelines peuvent être déclenchés automatiquement à chaque commit, merge request, ou selon un horaire défini, assurant une intégration et un déploiement continus.
-
-- **Avantages** :
-
-  - **Automatisation** : Réduit les tâches manuelles et minimise les erreurs humaines, augmentant ainsi l'efficacité et la fiabilité
-
-  - **Qualité assurée** : Les tests automatisés et les vérifications de code garantissent une meilleure qualité de code.
-  
-  - **Efficacité accrue** : Accélère le cycle de développement en automatisant les processus répétitifs et en permettant aux développeurs de se concentrer sur des tâches plus complexes et créatives.

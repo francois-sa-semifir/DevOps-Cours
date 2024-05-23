@@ -140,6 +140,13 @@ Notes:
   scoop install main/kubectl
 ```
 
+- MAC : (NB : ici `kubectl` s'appelle `kubernetes-cli`)
+  - <https://formulae.brew.sh/formula/kubernetes-cli#default>
+
+```bash
+  brew install kubernetes-cli
+```
+
 ----
 
 - Installer [k9s](https://scoop.sh/#/apps?q=k9s&id=395ddffa078b80f536e081b96533c098a3da719b) un gestionnaire de cluster Kubernetes en ligne de commande
@@ -157,7 +164,7 @@ scoop install main/k9s
 
 ---
 
-## Installation d'OpenLens
+## Installation d'OpenLens (Via Scoop)
 
 - Installer [OpenLens](https://scoop.sh/#/apps?q=openlens&id=7a01ac6633e4bda71fd7944b5182df4f890eab9c) interface graphique pour gérer les cluster Kubernetes
 
@@ -174,11 +181,44 @@ Notes:
   scoop install extras/openlens
 ```
 
+- MAC :
+  - <https://formulae.brew.sh/cask/openlens#default>
+
+```bash
+  brew install --cask openlens
+```
+
+---
+
+## Installation d'OpenLens (Alternative)
+
+Installer [OpenLens](https://github.com/MuhammedKalkan/OpenLens/releases)
+
+- pour Windows choisir la release `OpenLens.Setup.6.5.2-366.exe`
+
+- pour Mac choisir la release `OpenLens-6.5.2-366-mac.zip`
+
 ---
 
 ## Création du repo Github
 
-Se créer un repo Github pour la réalisation des TD
+- Assurez-vous que vous ayez un compte `Github` **et** une `connexion SSH` entre votre machine et votre compte
+
+  - Générer une clef SSH [ici](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+  - Lier sa clef à son compte Github [ici](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+- Se créer un repo Github pour la réalisation des TD, appelez-le par exemple `DevOps` et générer un fichier `README.md`
+
+---
+
+## Installatio de Git (si non présent)
+
+- Installer Git sur votre machine [ici](https://git-scm.com/downloads)
+
+- Configurer un `username` et un `email` pour signer vos futurs `commit`
+
+  - Tuto [ici](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git) dan la partie `votre identité` de la page
 
 ---
 
