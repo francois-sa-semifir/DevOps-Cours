@@ -9,13 +9,12 @@
 - 05 - DevOps - Github Actions (05_DevOps_Github_Actions.md)
 - 06 - DevOps - Manifest K8S (06_DevOps_Manifest_K8S.md)
 
----
-
-Le cours fonctionne avec d'autres cours :
+## Le cours fonctionne avec d'autres cours :
 
 - `Acculturation DevOps` pour la compréhension globale de la philosophie
 - `integration-continue` pour la partie CI
 - `ArgoCD` pour la partie CD
+
 ---
 
 ## Améliorations à apporter
@@ -24,14 +23,6 @@ Les améliorations à apporter aux supports :
 
 -
 -
-
----
-
-Le cours fonctionne avec d'autres cours :
-
-- `Acculturation DevOps` pour la compréhension globale de la philosophie
-- `integration-continue` pour la partie CI
-- `ArgoCD` pour la partie CD
 
 ---
 
