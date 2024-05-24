@@ -1,7 +1,3 @@
-# Information formateur : PLAN DE COURS
-
----
-
 ## Plan de cours
 
 - 01 - DevOps - Mise en place (01_DevOps_Mise_en_place.md)
