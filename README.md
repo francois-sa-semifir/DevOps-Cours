@@ -78,7 +78,7 @@ Pour accéder aux notes, une fois la présentation démarrée, appuyez sur la to
 Le support se compose de plusieurs éléments :
 
 - Un fichier par chapitre du cours
-- démos
+- demo
   - Un fichier md par démo nommé en fonction du chapitre correspondant
   - Les démos sont ici à voir comme des TD
 
