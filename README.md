@@ -11,9 +11,21 @@
 
 ---
 
+Le cours fonctionne avec d'autres cours :
+
+- `Acculturation DevOps` pour la compréhension globale de la philosophie
+- `integration-continue` pour la partie CI
+- `ArgoCD` pour la partie CD
+---
+
 ## Améliorations à apporter
 
 Les améliorations à apporter aux supports :
+
+-
+-
+
+---
 
 Le cours fonctionne avec d'autres cours :
 
