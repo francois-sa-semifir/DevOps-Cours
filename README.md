@@ -13,6 +13,7 @@
 
 - `Acculturation DevOps` pour la compréhension globale de la philosophie
 - `integration-continue` pour la partie CI
+- `Le cours Kubernetes`
 - `ArgoCD` pour la partie CD
 
 ---
@@ -21,7 +22,7 @@
 
 Les améliorations à apporter aux supports :
 
--
+- Ajouter une partie explicative sur Kubernetes et l'orchestration
 -
 
 ---
