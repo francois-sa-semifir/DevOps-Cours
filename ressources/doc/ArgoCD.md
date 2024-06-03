@@ -36,6 +36,12 @@ brew install argocd
 Depuis openLens (catalogue puis cliquer sur votre cluster pour l'instancier):
 Workloads --> Pods --> filtre sur le `Namespace:argocd` --> cliquer sur `argocd-server-xxxxx` --> scroll jusque "ports" et activer le `port fowarding` sur le 8080/TCP
 
+Ou en version ligne de commande
+
+```bash
+kubectl port-forward svc/argocd-server -n argocd 8080:8080
+```
+
 2 - Se connecter:
 
 une fois le port forwarding activer cliquer sur le 8080/TCP pour accéder à l'interface utilisateur.
@@ -54,10 +60,18 @@ Config --> Secrets --> filtre sur `All namespaces` ou `Namespace:argocd` --> cli
 - En ligne de commande :
 
   - WINDOWS :
+  
+    - version Bash
 
-  ```bash
-  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | %{[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($_))}
-  ```
+    ```bash
+    kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+    ```
+
+    - version Powershell
+
+    ```Powershell
+    kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | %{[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($_))}
+    ```
 
   - MAC :
 
@@ -113,3 +127,72 @@ Destination:
 
 - <https://kubernetes.default.svc> --> noeud par défaut
 - Namespace : à définir
+
+----
+
+## Installation d'ArgoCD-CLI
+
+- WINDOWS :
+
+```bash
+scopp add main # si vous n'avez pas encore installé le bucket main
+scoop install main/argocd
+```
+
+- MAC :
+
+Déjà fait `:)`
+
+----
+
+## Connection à ArgoCD depuis d'ArgoCD-CLI
+
+```bash
+argocd login localhost:<port_présent_dans_l'URL_de_votre_navigateur>
+```
+
+- Ex:
+
+```bash
+argocd login localhost:8080 # Connexion au serveur argocd avec votre identifiant et mot de passe admin
+```
+
+----
+
+## Setup d'un mdp de compte utilisateur depuis d'ArgoCD-CLI
+
+```bash
+argocd account update-password --account <nom_du_rôle>
+```
+
+----
+
+## Ajout de rôle à compte utilisateur depuis d'ArgoCD-CLI
+
+```bash
+argocd proj role add-group <nom-du_groupe> <nom_du_compte> <nom_du_rôle>
+```
+
+- Ex:
+
+```bash
+argocd proj role add-group pipelinecicd developpeur developpeur
+```
+
+----
+
+## Commandes Utiles ArgoCD
+
+```bash
+# Liste des applications
+argocd app list
+
+# Détail d'une application
+argocd app get <nom_application>
+
+# Liste des projets
+argocd proj list
+
+# Détail d'un projet
+argocd proj get <nom_projet>
+```
