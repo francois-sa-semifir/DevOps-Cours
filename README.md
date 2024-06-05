@@ -24,7 +24,6 @@ Les améliorations à apporter aux supports :
 
 - Ajouter une partie explicative sur Kubernetes et l'orchestration
 - Compléter les chapitres avec d'autres technologies de gestion de conteneur de d'orchestration pour l'exemple
-- 
 
 ---
 
